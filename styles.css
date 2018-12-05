@@ -1,0 +1,36 @@
+.title,.name,.text  {
+     font-weight:bold;
+ }
+body {
+    background-color:#FFFFCC;
+}
+.namearea{
+    margin-left:16px;
+    height:16px;
+    width:192px;
+}
+.titlearea{
+    height:16px;
+    width:320px;
+}
+.textarea{
+    height:160px;
+    width:442px;
+
+}
+.box1 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    border: solid 3px #000000;
+    background-color: white;
+}
+.green {
+    color:green;
+}
+.blue{
+    color:blue;
+}
+.red{
+    color:red;
+    margin-left:160px;
+}
