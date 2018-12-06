@@ -2,6 +2,7 @@
 <head>
     <meta charset = “UFT-8”>
     <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/test.js"></script>
     <title>掲示板α</title>
 </head>
 <body>
@@ -13,10 +14,24 @@
     <a class="title"><br/>タイトル</a>
     <input class="titlearea" type="text" name="title" value="">
 
-    <input type="submit" value="送信">
+
+    <button type="button" id="main_button">送信する</button>
+
 
     <div class="text">メッセージ</div>
     <textarea class="textarea" type="text" name="text" value=""></textarea>
+
+
+    <div class="modal">
+        <div class="modal_wrapper">
+
+        </div>
+        <div class="modal_content">
+            <p>本当に投稿しますか？</p>
+            <input type="submit" value="投稿する">
+            <button type="button">戻る</button>
+        </div>
+    </div>
 
     <?php
     $pdo = new PDO("mysql:host=localhost;dbname=board_test;charset=utf8", "root", "");
@@ -48,5 +63,5 @@
         <p class="red"><?php echo $row["text"].'<br>';?></p>
     </div>
    <?php } ?>
-
 </body>
+</html>
