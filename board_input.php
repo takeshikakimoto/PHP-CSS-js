@@ -11,7 +11,7 @@
     <a class="name">お名前</a>
     <input class="namearea" type="text" name="name" value="">
 
-    <a class="title"><br/>タイトル</a>
+    <a class="title"><br/>タイト</a>
     <input class="titlearea" type="text" name="title" value="">
 
 
